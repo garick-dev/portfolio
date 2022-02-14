@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", (ev) => {
+    const burgerEl = document.querySelector(".burger");
     const showMobileMenu = () => {
         document.addEventListener("click", (ev) => {
             const menuEl = document.querySelector(".menu_header");
@@ -19,11 +20,30 @@ document.addEventListener("DOMContentLoaded", (ev) => {
         document.addEventListener("click", (ev) => {
             if ( ev.target && ev.target.classList.contains("menu__link_mobile")) {
                 document.getElementById("burger__checkbox").checked = false;
+                // add overflow if open burger menu
+                document.body.style.overflow = "auto";
+                // change burger position
+                burgerEl.style.position = "absolute";
             }
         })
 
     }
     disabledCheckBox();
+
+    const changeBurgerPosition = () => {
+        document.addEventListener("change", (ev) =>{
+            const checkboxEl =  document.getElementById("burger__checkbox").checked;
+            if (checkboxEl === true) {
+                document.body.style.overflow = "hidden";
+                burgerEl.style.position = "fixed";
+            }
+            else {
+                document.body.style.overflow = "auto";
+                burgerEl.style.position = "absolute";
+            }
+        })
+    }
+    changeBurgerPosition();
 
 
     const slider = new Glide('.glide', {
