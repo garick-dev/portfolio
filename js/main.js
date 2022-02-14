@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (ev) => {
             const menuEl = document.querySelector(".menu_header");
             const burgerLineEl = document.querySelectorAll(".burger__line");
 
-            if (ev.target && ev.target.classList.contains("burger") || ev.target && ev.target.classList.contains("burger__line") || ev.target && ev.target.classList.contains("menu__link")) {
+            if (ev.target && ev.target.classList.contains("burger") || ev.target && ev.target.classList.contains("burger__line") || ev.target && ev.target.classList.contains("menu__link_mobile")) {
                 menuEl.classList.toggle("open");
                 burgerLineEl.forEach(item => {
                     item.classList.toggle("clear");
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", (ev) => {
 
     const disabledCheckBox = () => {
         document.addEventListener("click", (ev) => {
-            if ( ev.target && ev.target.classList.contains("menu__link")) {
+            if ( ev.target && ev.target.classList.contains("menu__link_mobile")) {
                 document.getElementById("burger__checkbox").checked = false;
             }
         })

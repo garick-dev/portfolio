@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="JavaScript developer, HTML Coder">
+    <meta name="keyword" content="portfolio, javascript, developer, html, css, node.js, mongodb, mysql, flutter, dart">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/fonts.css">
     <link rel="stylesheet" href="./style/style.css">
 
-    <title>GaRiCk-Dev</title>
+    <title>Front-end dev</title>
 </head>
 <body>
         <header class="header">
@@ -35,17 +37,17 @@
                         <span class="burger__line"></span>
                     </label>
                     <ul class="menu menu_header">
-                        <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
-                        <li class="menu__item"><a href="#about" class="menu__link">About me</a></li>
-                        <li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
-                        <li class="menu__item"><a href="#footer" class="menu__link">Contact</a></li>
+                        <li class="menu__item"><a href="#skills" class="menu__link menu__link_mobile">Skills</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link menu__link_mobile">About me</a></li>
+                        <li class="menu__item"><a href="#portfolio" class="menu__link menu__link_mobile">Portfolio</a></li>
+                        <li class="menu__item"><a href="#footer" class="menu__link menu__link_mobile">Contact</a></li>
                     </ul>
                 </div>
             </div>
 
         </header>
         <article class="main">
-            <div class="promo">
+            <div id="promo" class="promo">
                 <div class="container">
                     <div class="promo__inner">
                         <div class="promo__left">
@@ -56,7 +58,7 @@
                                 I’m Vlad Pogorelov
                             </h1>
                             <p class="promo__text">
-                                I've been doing front-end and back-end development for a year now. Do you need turnkey website? Then contact me
+                                I've been doing front-end and back-end development for over a year now. Are you interested in my profile or do you need a turnkey website? Then contact me
                             </p>
                             <a href="#footer" class="button button_promo">Contact me</a>
                         </div>
@@ -185,8 +187,8 @@
                                 about me
                             </h2>
                             <p class="about__text">
-                                Hello again everyone! So, you already know that my name is Vlad. A little about myself: 25 y.o., I ride my bike and lick, I like to travel. I live in Krasnodar, Russia.
-                                I have a bachelor's degree and am currently studying for a master's degree. I am very responsible for such things as: quality and deadlines for the completion of work! I have been studying and developing web applications in JavaScript using MERN technology for more than a year and I want to further develop in this direction. I emphasize my honesty, punctuality, discipline. Since I have experience in team projects, I easily join the team, I learn quickly and with great pleasure, I have high efficiency. I know how to work in a team and use the version control system - GIT. I know how to typeset and enjoy the process of turning a layout into a working product. If you are interested in me , you want to know something more or use my services, then I will provide all my contacts below.
+
+                                Hello again everyone! So, you already know that my name is Vlad. A little about myself: 25 years old, I like to travel, go in for sports, namely to ride on licks and bike. I live in Krasnodar, Russia. I have a bachelor's degree and am currently studying for a master's degree. I am very responsible for such things as: quality and deadlines for the completion of work! I have been studying and developing web applications in JavaScript using MERN technology for more than a year and I want to further develop in this direction. I emphasize my honesty, punctuality, discipline. Since I have experience in team projects, I easily join the team, I learn quickly and with great pleasure, I have high efficiency. I know how to work in a team and use the version control system - GIT. I know how to typeset and enjoy the process of turning a layout into a working product. If you are interested in me , you want to know something more or use my services, then I will provide all my contacts below.
                             </p>
                             <div class="about__item about__item_1">
                                 <div class="about__image">
@@ -358,18 +360,18 @@
                                     </button>
                                 </div>
                                 <div class="glide__bullets" data-glide-el="controls[nav]">
-                                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                                    <button class="glide__bullet" data-glide-dir="=3"></button>
-                                    <button class="glide__bullet" data-glide-dir="=4"></button>
-                                    <button class="glide__bullet" data-glide-dir="=5"></button>
-                                    <button class="glide__bullet" data-glide-dir="=6"></button>
-                                    <button class="glide__bullet" data-glide-dir="=7"></button>
-                                    <button class="glide__bullet" data-glide-dir="=8"></button>
-                                    <button class="glide__bullet" data-glide-dir="=9"></button>
-                                    <button class="glide__bullet" data-glide-dir="=10"></button>
-                                    <button class="glide__bullet" data-glide-dir="=11"></button>
+                                    <button class="glide__bullet" data-glide-dir="=0" aria-label="bullet"></button>
+                                    <button class="glide__bullet" data-glide-dir="=1" aria-label="bullet"></button>
+                                    <button class="glide__bullet" data-glide-dir="=2" aria-label="bullet"></button>
+                                    <button class="glide__bullet" data-glide-dir="=3" aria-label="bullet"></button>
+                                    <button class="glide__bullet" data-glide-dir="=4" aria-label="bullet"></button>
+                                    <button class="glide__bullet" data-glide-dir="=5" aria-label="bullet"></button>
+                                    <button class="glide__bullet" data-glide-dir="=6" aria-label="bullet"></button>
+                                    <button class="glide__bullet" data-glide-dir="=7" aria-label="bullet"></button>
+                                    <button class="glide__bullet" data-glide-dir="=8" aria-label="bullet"></button>
+                                    <button class="glide__bullet" data-glide-dir="=9" aria-label="bullet"></button>
+                                    <button class="glide__bullet" data-glide-dir="=10 " aria-label="bullet"></button>
+                                    <button class="glide__bullet" data-glide-dir="=11" aria-label="bullet"></button>
                                 </div>
                             </div>
                         </div>
@@ -381,10 +383,10 @@
             <div class="footer__inner">
                 <div class="footer__left">
                     <ul class="menu menu_footer">
-                        <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">About me</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                        <li class="menu__item"><a href="#promo" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">About me</a></li>
+                        <li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
                     </ul>
                 </div>
                 <div class="footer__center">
